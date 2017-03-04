@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import UserList from '../components/UserList'
+import UserList from '../components/UserList';
+import UserForm from '../components/UserForm';
 import logo from '../assets/logo.svg';
 import '../assets/App.css';
-
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       users: [
-        {id: 1, nombre: "miguel", email: "miguelghz@miguelghz.io"},
+        {id: 1, nombre: "miguel", email: "miguelghz@miguelgomez.io"},
         {id: 2, nombre: "test", email: "test@test.es"}
       ]
     };
@@ -35,10 +35,9 @@ class App extends Component {
           <h2>Bienvenido a React</h2>
         </div>
         <div>
-          <p className="App-intro">
-            Lista de usuarios
-          </p>
-          <UserList users={this.state.users} onAddUser={this.handleOnAddUser.bind(this)} />
+          <p><strong>Añade usuarios</strong></p>
+          <UserList users={this.state.users}  />
+          <UserForm onAddUser={this.handleOnAddUser.bind(this)} />
         </div>
       </div>
     );

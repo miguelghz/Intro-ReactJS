@@ -1,5 +1,6 @@
 {
-  "name": "mi-app",
+  "name": "Intro-ReactJS",
+  "homepage": "https://miguelgomez.io/demos/intro-reactjs",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {

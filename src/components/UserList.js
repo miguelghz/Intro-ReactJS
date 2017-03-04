@@ -4,24 +4,17 @@ import User from '../components/User'
 class UserList extends Component {
   render () {
     return (
-      <div>
         <ul>
-          {this.props.users.map(empleado => {
+          {this.props.users.map(u => {
             return (
               <User
-                key={empleado.id}
-                nombre={empleado.name}
-                email={empleado.email}
+                key={u.id}
+                name={u.name}
+                email={u.email}
               />
             );
           })}
         </ul>
-        <form onSubmit={this.props.onAddUser}>
-          <input type="text" placeholder="Nombre" name="name" />
-          <input type="email" placeholder="Email" name="email" />
-          <input type="submit" value="Guardar" />
-        </form>
-      </div>
     );
   }
 }
