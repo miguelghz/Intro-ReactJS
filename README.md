@@ -28,5 +28,8 @@ Launches the test runner in the interactive watch mode.<br>
 
 Builds the app for production to the `build` folder.<br>
 
+## Blog article
+https://miguelgomez.io/react/tutorial-react-js-introduccion/
+
 ## Demo
 https://miguelgomez.io/demos/intro-reactjs/
