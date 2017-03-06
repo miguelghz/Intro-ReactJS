@@ -9,8 +9,8 @@ class App extends Component {
     super();
     this.state = {
       users: [
-        {id: 1, nombre: "miguel", email: "miguelghz@miguelgomez.io"},
-        {id: 2, nombre: "test", email: "test@test.es"}
+        {id: 1, name: "miguel", email: "miguelghz@miguelgomez.io"},
+        {id: 2, name: "test", email: "test@test.es"}
       ]
     };
   }
